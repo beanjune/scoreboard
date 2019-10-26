@@ -1,22 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {Header} from './components/header';
 
 
-
-const Header = (props) => {
-  console.log(props);
-  ;
-  const {title, tortalPlayers} = props;
-
-  return (
-      <header className="header">
-        <h1 className="h1">{title}</h1>
-        <span className="stats">Players: {tortalPlayers}</span>
-      </header>
-  );
-
-}
 
 //fucntion 컴포넌트를 class 컴포넌트로 전환
 class Counter extends React.Component {
